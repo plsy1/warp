@@ -1,0 +1,2 @@
+# warp
+优选Cloudflare Warp节点并生成用于Clash的WIreGuard配置
