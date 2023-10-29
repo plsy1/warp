@@ -1,0 +1,197 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+ -
+proxy-groups:
+  - name: 🐻 Warp 负载均衡 散列
+    type: load-balance
+    url: https://i.ytimg.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+      - Warp01
+      - Warp02
+      - Warp03
+      - Warp04
+      - Warp05
+      - Warp06
+      - Warp07
+      - Warp08
+      - Warp09
+      - Warp10
+      - Warp11
+      - Warp12
+      - Warp13
+      - Warp14
+      - Warp15
+      - Warp16
+      - Warp17
+      - Warp18
+      - Warp19
+      - Warp20
+      - Warp21
+      - Warp22
+      - Warp23
+      - Warp24
+      - Warp25
+      - Warp26
+      - Warp27
+      - Warp28
+      - Warp29
+      - Warp30
+      - Warp31
+      - Warp32
+      - Warp33
+      - Warp34
+      - Warp35
+      - Warp36
+      - Warp37
+      - Warp38
+      - Warp39
+      - Warp40
+      - Warp41
+      - Warp42
+      - Warp43
+      - Warp44
+      - Warp45
+      - Warp46
+      - Warp47
+      - Warp48
+      - Warp49
+      - Warp50
+  - name: 🐻 Warp 负载均衡 轮询
+    type: load-balance
+    url: https://i.ytimg.com/generate_204
+    interval: 300
+    strategy: round-robin
+    proxies:
+      - Warp01
+      - Warp02
+      - Warp03
+      - Warp04
+      - Warp05
+      - Warp06
+      - Warp07
+      - Warp08
+      - Warp09
+      - Warp10
+      - Warp11
+      - Warp12
+      - Warp13
+      - Warp14
+      - Warp15
+      - Warp16
+      - Warp17
+      - Warp18
+      - Warp19
+      - Warp20
+      - Warp21
+      - Warp22
+      - Warp23
+      - Warp24
+      - Warp25
+      - Warp26
+      - Warp27
+      - Warp28
+      - Warp29
+      - Warp30
+      - Warp31
+      - Warp32
+      - Warp33
+      - Warp34
+      - Warp35
+      - Warp36
+      - Warp37
+      - Warp38
+      - Warp39
+      - Warp40
+      - Warp41
+      - Warp42
+      - Warp43
+      - Warp44
+      - Warp45
+      - Warp46
+      - Warp47
+      - Warp48
+      - Warp49
+      - Warp50
+  - name: 🐻 Warp
+    type: url-test
+    url: https://i.ytimg.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - Warp01
+      - Warp02
+      - Warp03
+      - Warp04
+      - Warp05
+      - Warp06
+      - Warp07
+      - Warp08
+      - Warp09
+      - Warp10
+      - Warp11
+      - Warp12
+      - Warp13
+      - Warp14
+      - Warp15
+      - Warp16
+      - Warp17
+      - Warp18
+      - Warp19
+      - Warp20
+      - Warp21
+      - Warp22
+      - Warp23
+      - Warp24
+      - Warp25
+      - Warp26
+      - Warp27
+      - Warp28
+      - Warp29
+      - Warp30
+      - Warp31
+      - Warp32
+      - Warp33
+      - Warp34
+      - Warp35
+      - Warp36
+      - Warp37
+      - Warp38
+      - Warp39
+      - Warp40
+      - Warp41
+      - Warp42
+      - Warp43
+      - Warp44
+      - Warp45
+      - Warp46
+      - Warp47
+      - Warp48
+      - Warp49
+      - Warp50
+ 
